@@ -5,9 +5,12 @@
 :root {
   --header-bg: #10375c;
 }
+/* Đặt lại font mặc định cho html là 10px (1rem) */
 html {
   font-size: 62.5%;
 }
+
+/* Code các thuộc tính chung cho body như font size, font family... */
 body {
   font-size: 1.6rem;
   font-family: "Sora", sans-serif;
@@ -30,7 +33,6 @@ a {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 175%; /* 175% */
   border-radius: 999px;
 }
 .btn:hover {
@@ -84,4 +86,64 @@ a {
 
 .header__action--login {
   margin-right: 7px;
+}
+/* ======================== hero ========================*/
+.hero {
+  display: flex;
+  padding-top: 76px;
+  align-items: center;
+}
+.hero__content {
+  width: 44%;
+}
+.hero__media {
+  flex: 1;
+}
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 114%; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+.hero__desc {
+  margin-top: 22px;
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+.hero__row {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: 38px;
+}
+
+.hero__phone {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 167%; /* 166.667% */
+}
+.hero__images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero__img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+  margin-right: -6px;
+  z-index: 1;
+}
+
+.hero__img--small {
+  width: 210px;
+  height: 410px;
 }
